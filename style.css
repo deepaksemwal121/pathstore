@@ -63,7 +63,7 @@ nav ul li{
    object-fit: cover;
    opacity: 1;
    height: 500px;
-   width: 100vw;
+   width: 100%;
 }
 
 /*---------Navigation Tabs Here -------*/
@@ -96,13 +96,17 @@ nav ul li{
 }
 .nav-pills .nav-link.active{
   background: linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);
-  color:#20e919;
+  color:#0EF909;
 }
 .tab-content{
   position: absolute;
   width: 600px;
-  background:linear-gradient(180deg, #FF05BD99 0%, #E6017E99 50%),url(./assets/map.png);
+  background:url(./assets/map.png);
+  background-color: #ff0f8fda;
   height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: -45px;
   margin-left: -30px ;
   color: #000;
@@ -142,8 +146,8 @@ nav ul li{
 
 .toggleBtn-active{
 
-  background:linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);
-  color: #20e919;
+  background:#FF0F8E;
+  color: #0EF909;
   border-radius: 10px;
   border: 2px solid white;
   text-decoration: none;
@@ -156,7 +160,7 @@ nav ul li{
 
 
  .green{
-  color: #20e919;
+  color: #0EF909;
  }
 
  .pagination {
@@ -164,18 +168,27 @@ nav ul li{
 }
 
 .pagination a {
-  color: black;
+  color:white;
   float: left;
   padding: 8px 8px;
   text-decoration: none;
   transition: background-color .3s;
-  border: 1px solid #ddd;
-}
+  border: 1.5px solid #fff;
+  font-family: 'D-DIN Condensed';
+} 
 
+.pagination a:nth-child(1){
+
+  border-radius:5px 0 0 5px ;
+}
+.pagination a:last-child{
+ 
+background-color: white;
+}
 .pagination a.active {
-  background-color: #20e919;
-  color: white;
-  border: 1px solid #20e919;
+  background-color: #fff;
+  color: #FF0F8E;
+  border: 1.5px solid white;
 }
 
 .pagination a:hover:not(.active) 
@@ -184,19 +197,42 @@ nav ul li{
 }
 
 .btn-success{
-  background-color:#20e919 ;
+  background-color: #0EF909;
   color: black;
   border:none;
+  width: 10rem;
   padding: 0 auto;
+  margin: 10px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+input::placeholder{
+
+ font-size: 15px;
+ font-weight: 600;
+
+}
+
+select{
+
+  font-size: 15px;
+  font-weight: 600;
+ 
+}
+.btn-success:hover{
+  background-color: white; 
+  color: #0EF909;
 }
 
 .pinkBtn{
 
-  background: linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);
+  background: linear-gradient(180deg, #ff0f8e 0%, #E6017E 100%);
   border: none;
   color: white;
   border-radius: 5px;
-  padding: 0 15%;
+  padding: 0 auto;
+  width:8rem; 
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 }
 
 .pinkHead{
@@ -205,11 +241,26 @@ nav ul li{
   font-weight: bold;
   color:#E6017E;
 }
+
+.pink{
+  
+  color:#E6017E;
+
+}
  .smallText{
    font-size: 14px;
    text-align: left;
  }
 
+ .container-ticket{
+  align-content: center;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.4);
+ }
 
 /* ---- Media Queries Starts Here------- */
 

@@ -55,10 +55,10 @@
      </section>
 <!-- Modal -->
 <div class="modal fade" id="popUp"   aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content w-75 m-5 p-sm-5" style=" color: white; background: linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);">
+    <div class="modal-dialog  " ">
+      <div class="modal-content w-75 m-5 mx-5 p-sm-5" style=" top:200px; color:white; background:#FF0F8E;">
         <div class="modal-header border-0">
-          <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class=" btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-0 text-center">
             <h5 class="modal-title" id="popUp">Enter Pincode So we can help you better</h5>
@@ -103,13 +103,13 @@
     <!--------------------   Container 1 Home Collection  --------- --> 
 
 
-                <div class="container-1 d-none">
+                <div class="container-1">
                     <form class="mb-3 p-3 pt-0">
                         <h4 class="green">Your Location</h4>
-                        <input type="text" class="form-control col-form-label-sm w-50 d-inline"  placeholder="Pincode"><span class="d-inline" style="font-style: 0.4rem; color: white;"> Yes we are available in your location</span>
+                        <input type="text" class="form-control col-form-label-sm w-50 d-inline"  placeholder="Pincode"><span class="d-inline" style="font-style: 0.1rem; color: white;"> Yes we are available in your location</span>
                         <input type="text" class="form-control col-form-label-sm mt-1 w-100" placeholder="Address">
                         <h4 class="green mt-1">Your Contact</h4>
-                        <input type="text" class="form-control col-form-label-sm mt-1 w-75" placeholder="Enter Mobile No.">
+                        <input type="text" class="form-control col-form-label-sm mt-1 " placeholder="Enter Mobile No." style="width: 60%;">
                         <p class="green mt-1">How many test do you need?</p>
                         <div class="pagination">
                             <a href="">1</a>
@@ -117,7 +117,7 @@
                             <a href="">3</a>
                             <a href="">4</a>
                             <a href="">5</a>
-                            <a href=""><select class="form-select bg-transparent border-0 py-0" aria-label="Default select example">
+                            <a href="" style="background: white;"><select class="form-select bg-white border-0 py-0" aria-label="Default select example">
                                 <option selected>More</option>
                                 <option value="1">6</option>
                                 <option value="2">7</option>
@@ -126,7 +126,7 @@
                                 <option value="3">10</option>
                               </select></a>
                               <br>
-                              <button type="button" class="btn btn-success py-0 px-5 fw-bold mt-2 fs-4">Submit</button>
+                              <button type="button" class="btn btn-success"  onclick="redirect();">Submit</button>
                           </div>
                     </form>
                 </div>
@@ -142,7 +142,7 @@
                         <div class="col-6">
                             <div class="container rounded shadow-lg bg-white m-0 p-3 w-75 ">
                                 <h4 class="pinkHead">Location 1</h4>
-                                <hr style="height:4px;border-width:0; text-align: left; width:25%;background-color:#E6017E;">
+                                <hr style="height:4px;border-width:0; opacity: 1; text-align: left;margin-top:0 ;  width:25%; background:#FF0F8E;">
                                 <p class="fw-bold">Pathstore</p>
                                 <p>E-23 Ground Floor <br>South  Extension-1<br>110049</p>
                                 <div class="text-center">
@@ -151,9 +151,9 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="container rounded bg-white m-0 p-3 w-75">
-                                <h4 class="pinkHead">Location 1</h4>
-                                <hr  style="height:4px;border-width:0; text-align: left; width:25%;background-color:#E6017E;">
+                            <div class="container shadow-lg rounded bg-white m-0 p-3 w-75">
+                                <h4 class="pinkHead">Location 2</h4>
+                                <hr  style="height:4px;border-width:0; opacity: 1; text-align: left;margin-top:0 ; width:25%;background-color:#FF0F8E;">
                                 <p class="fw-bold fs-6">Pathstore</p>
                                 <p>E-23 Ground Floor <br>South  Extension-1<br>110049</p>
                                 <div class="text-center">
@@ -247,7 +247,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="button" class=" btn btn-success shadow-lg px-5 fw-bold mt-2 fs-6">Proceed</button> 
+                                <button type="button" onclick="redirect1();" class=" btn btn-success">Proceed</button> 
                             </div>
                             
                 </div>
@@ -257,12 +257,16 @@
 
   <!-------------------   Registration ID Generated Container-------------->
 
-          <div class="container-4 "">
-            <h3 class="text fw-bold mt-5 py-3 text-center">Your Booking Has Been Confirmed !</h3>
-            <div class="container bg-white">
-
-                hELLO  tHERE !
-
+          <div class="container-4 d-none align-content-center ">
+            <h3 class="text fw-bold mt-2 py-3 text-center">Your Booking Has Been Confirmed !</h3>
+            <div class="container-ticket text-center ">
+                    <p class="text-center fs-4 fw-bold lh-sm"> Your Registration ID</p>
+                    <p class="pink text-center fs-2 fw-bold py-0 lh-sm">xxx-xxxx-xxxxx</p>
+                    <p class="p-3 py-0 text-center">Share this registration id with the sample collection executive to initiate your sample collection</p>
+                    <hr style=" border-top: 2px dashed red; background:none;">
+                    <p class="p-3 text-center pink">Sample Collection Executive Will Be 
+                        Assigned With In <span class="fw-bold fs-4">30 </span>Minutes</p>
+                        <button type="button" class="btn btn-success">Track Your Order</button>
             </div>
       </div>
 
@@ -275,7 +279,6 @@
 
           <!----Track Report-->
               <div id="regis" class="container tab-pane fade">
-
               </div>
             </
             div>

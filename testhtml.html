@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>untitled</title>
+<style>
+.rule {
+  height: 2px;
+  background: #000;
+}
+.rule:before, .rule:after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 1000px;
+  float: left;
+  background: purple;
+  margin-top: -20px;
+}
+.rule:after {
+  float: right;
+}
+</style>
+</head>
+<body>
+<div class="rule"></div>
+</body>
+</html>

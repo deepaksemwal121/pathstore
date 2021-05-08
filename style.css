@@ -101,7 +101,7 @@ nav ul li{
 .tab-content{
   position: absolute;
   width: 600px;
-  background:linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);
+  background:linear-gradient(180deg, #FF05BD99 0%, #E6017E99 50%),url(./assets/map.png);
   height: auto;
   margin-top: -45px;
   margin-left: -30px ;
@@ -205,7 +205,10 @@ nav ul li{
   font-weight: bold;
   color:#E6017E;
 }
-
+ .smallText{
+   font-size: 14px;
+   text-align: left;
+ }
 
 
 /* ---- Media Queries Starts Here------- */

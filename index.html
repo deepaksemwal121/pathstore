@@ -97,8 +97,13 @@
                      <button class="toggleBtn-active px-4 me-4" onclick="toggler1();">Home</button>
                      <button class="toggleBtn px-4 mx-4 float-end" onclick="toggler2();">Collection Center</button>
                 </div>
-               <!----   Container 1 Home Collection   --> 
-                <div class="container-1">
+
+
+
+    <!--------------------   Container 1 Home Collection  --------- --> 
+
+
+                <div class="container-1 d-none">
                     <form class="mb-3 p-3 pt-0">
                         <h4 class="green">Your Location</h4>
                         <input type="text" class="form-control col-form-label-sm w-50 d-inline"  placeholder="Pincode"><span class="d-inline" style="font-style: 0.4rem; color: white;"> Yes we are available in your location</span>
@@ -107,12 +112,12 @@
                         <input type="text" class="form-control col-form-label-sm mt-1 w-75" placeholder="Enter Mobile No.">
                         <p class="green mt-1">How many test do you need?</p>
                         <div class="pagination">
-                            <a href="#">1</a>
-                            <a href="#" class="active">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#"><select class="form-select bg-transparent border-0 py-0" aria-label="Default select example">
+                            <a href="">1</a>
+                            <a href="" class="active">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href=""><select class="form-select bg-transparent border-0 py-0" aria-label="Default select example">
                                 <option selected>More</option>
                                 <option value="1">6</option>
                                 <option value="2">7</option>
@@ -161,7 +166,7 @@
               </div>
               
               
-     <!-----------------------    Container 2 Patient Form and Checkout           --------------------->
+     <!-----------------------    Container 3 Patient Form and Checkout           --------------------->
               <div class="container-3 mt-3 d-none">   
                 <div class="row g-0">
                     <div class="col-6 border-end p-2">
@@ -215,29 +220,29 @@
                     <div class="col-6 p-3">
                         <div class="container rounded bg-white m-0 p-3 w-100">
                             <p class="text-center fs-6">Your Order</p>
-                            <div class="row">
+                            <div class="row smallText">
                                 <div class="col-8">
                                     <p>Type of Sample Collection Selected</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 text-right">
                                     <p> Home</p>
                                 </div>
                             </div>
                             <hr class="m-0">
-                            <div class="row">
+                            <div class="row smallText">
                                 <div class="col-8">
                                     <p>Number of Samples</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 ">
                                     <p> 2</p>
                                 </div>
                             </div>
                             <hr class="m-0">
                             <div class="row">
-                                <div class="col-8">
-                                    <p>Total Of Billing<span>(inclusive all taxes)</span></p>
+                                <div class="col-8 smallText fw-bold">
+                                    <p>Total Billing Amount<span>(inclusive all taxes)</span></p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 smallText fw-bold">
                                     <p>1600</p>
                                 </div>
                             </div>
@@ -248,11 +253,32 @@
                 </div>
             </div>
           </div>
+          </div>
+
+  <!-------------------   Registration ID Generated Container-------------->
+
+          <div class="container-4 "">
+            <h3 class="text fw-bold mt-5 py-3 text-center">Your Booking Has Been Confirmed !</h3>
+            <div class="container bg-white">
+
+                hELLO  tHERE !
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
           <!----Track Report-->
               <div id="regis" class="container tab-pane fade">
 
               </div>
-            </div>
+            </
+            div>
             </div>
             </div>
           </section>

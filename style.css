@@ -283,6 +283,7 @@ select{
       top: 300px;
       margin: 5px ;
       left: 0;
+      right: 0;
     } 
     .content{
       width: auto;

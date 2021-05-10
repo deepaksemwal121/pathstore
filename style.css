@@ -66,7 +66,7 @@ nav ul li{
    width: 100%;
 }
 
-/*---------Navigation Tabs Here -------*/
+/*---------          Navigation Tabs Here          -------*/
 
 
 /*--------- Tabs CSS Starts here ---------*/
@@ -294,7 +294,7 @@ select{
       width: 5rem;
     }
     .toggleContainer{
-        width: 330px;
+        width: auto;
         font-size: 0.8rem;
     }
     .toggleBtn-active{

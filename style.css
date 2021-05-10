@@ -71,7 +71,7 @@ nav ul li{
 
 /*--------- Tabs CSS Starts here ---------*/
 .content{
-  width: 455px;
+  width: 600px;
   align-self: center;
   height: auto;
   margin: -25% auto 0 auto;
@@ -86,14 +86,14 @@ nav ul li{
 
 .nav-pills .nav-link{
   font-weight: bold;
-  margin: 0;
-  text-align: center;
   background: #eae8e9;
   color: grey;
   border-radius: 15px;
   height: 100px;
+  padding-top: 13px;
   text-align: left;
 }
+
 .nav-pills .nav-link.active{
   background: linear-gradient(180deg, #FF05BD 0%, #E6017E 100%);
   color:#0EF909;
@@ -125,7 +125,8 @@ nav ul li{
   height:auto;
   width:350px;
   border-radius: 10px;
-  margin: 10% 10%;
+  align-self: center;
+  margin: 0 auto;
   box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.4);
 }
 
@@ -261,6 +262,12 @@ select{
   padding: 15px;
   box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.4);
  }
+ .mobile-nav{
+  position: fixed;
+  bottom: 0;
+  float: initial;
+  
+}
 
 /* ---- Media Queries Starts Here------- */
 
@@ -270,5 +277,26 @@ select{
        }
     .navbar-collapse{
         margin-bottom:  10px;
-    }   
+    } 
+    .tab-content{
+      width:auto;
+      top: 300px;
+      margin: 5px ;
+      left: 0;
+    } 
+    .content{
+      width: auto;
+      margin: auto;
+      padding: auto;
+    }
+    .pinkBtn{
+      width: 5rem;
+    }
+    .toggleContainer{
+        width: 330px;
+        font-size: 0.8rem;
+    }
+    .toggleBtn-active{
+      font-size: 0.9rem;
+    }
   }
